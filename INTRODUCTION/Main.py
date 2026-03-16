@@ -36,4 +36,10 @@ print("Is x equal to y?", x==y)
 print("Is x not equal to y?", x!=y)   
 
 
+my_var=50
+print(type(my_var))
+my_var="Hello"
+print(type(my_var))
+
+
     
