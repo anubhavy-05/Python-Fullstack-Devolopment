@@ -47,7 +47,7 @@ print(type(my_var))  # Print the updated data type of my_var (str).
 
 num1=500
 num2=500
-print(memory  address of num1:", id(num1))  # Print the memory address of num1.
+print("Memory address of num1:", id(num1))  # Print the memory address of num1.
 print("Memory address of num2:", id(num2))  # Print the memory address of num2.
 print("Are num1 and num2 the same object?", num1 is num2)  # Check if num1 and num2 refer to the same object in memory.
 print(id(num1) == id(num2))  # Check if the memory addresses of num1 and num2 are the same. 
