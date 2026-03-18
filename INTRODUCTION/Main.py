@@ -67,3 +67,34 @@ print("Sum:", sum)
 print("Difference:", difference)
 print("Product:", product)
 print("Quotient:", quotient)    
+
+#WAP to take two varable and swap their values without using a third variable.
+a=10
+b=20    
+print("Before swapping: a =", a, "b =", b)  # Print the values of a and b before swapping.
+a=a+b  # Update a to be the sum of a and b.
+b=a-b  # Update b to be the difference of the new a and the original b.
+a=a-b  # Update a to be the difference of the new a and the new b.
+print("After swapping: a =", a, "b =", b)  # Print the values of a and b after swapping.
+
+a=10
+b=20  
+a,b = b, a  # Swap the values of a and b using tuple unpacking.)
+print( a,  b)  # Print the values of a and b after swapping.
+
+#WAP to take two numbers from user and print their sum.
+
+
+x=int(input("enter the first number:"))
+y=int(input("enter the second number:"))    
+sum= x + y 
+print("the sum of x and y is:",sum)    
+
+#WAP to take a number from user and check whether it is positive or non-positive.
+
+
+x=int(input("enter the number:"))
+if x>=0:
+    print("the number is positive")
+if x<0:
+    print("the number is non-positive")
