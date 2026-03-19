@@ -93,8 +93,3 @@ print("the sum of x and y is:",sum)
 #WAP to take a number from user and check whether it is positive or non-positive.
 
 
-x=int(input("enter the number:"))
-if x>=0:
-    print("the number is positive")
-if x<0:
-    print("the number is non-positive")
