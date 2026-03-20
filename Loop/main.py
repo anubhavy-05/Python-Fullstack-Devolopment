@@ -71,12 +71,23 @@ while i<=n:
 print(sum)
 
 
-
+#CREATE A VARIABLE CALLED PASSWORD AND ASSIGN A VALUE TO IT. THEN ASK THE USER TO ENTER THE PASSWORD AND CHECK IF IT IS CORRECT OR NOT USING WHILE LOOP.
 sahi_password = "python123"
 password = input("enter the password:")
 while password != sahi_password:
     print("wrong password, try again")
     password = input("enter the password:")
 print("correct password, welcome to the system")
+
+#WAP[ to create a password and ask the user to enter the password until it is correct using while loop.]
+correct_password = "python123"
+while True:
+    password = input("enter the password:")
+    if password == correct_password:
+        print("correct password, welcome to the system")
+        break
+    else:
+        print("wrong password, try again")
+
 
     
