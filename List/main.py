@@ -33,3 +33,12 @@ Marks.pop(3) # To remove the last element from the list.
 print("The marks after popping the element at index 3 are:", Marks)
 
 
+
+                    # LIST SLICING
+
+print("The first three marks are:", Marks[0:3]) # To get a sublist of the first three elements.
+
+print("The last two marks are:", Marks[-2:]) # To get a sublist of the last two elements.
+
+print("The marks from index 1 to 4 are:", Marks[1:5]) # To get a sublist of elements from index 1 to 4.
+
