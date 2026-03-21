@@ -56,3 +56,37 @@ digit_count=len(str(number))
 print("The number of digits in the number is:", digit_count)
 
 
+#WAP to check how many digits are there in a number. Take the number as input from the user without using the len() function.
+
+
+number=int(input("Enter a number:")) # Start the counter at 0; we will increase it once per digit.
+digit_count=0   # Keep removing the last digit until no digits are left.
+while number>0: # Integer division by 10 removes the last digit.
+    number=number//10 # Count one digit removed in this iteration.
+    digit_count+=1 # Print the total number of digits found.
+print("The number of digits in the number is:", digit_count)
+
+3#WAP to check if a number is positive, negative or zero. Take the number as input from the user.
+
+x=int(input("Enter a number:"))
+if x>0:
+    print("The number is positive.")
+elif x<0:
+    print("The number is negative.")
+else:
+    print("The number is zero.")
+
+#WAP to print all the odd numbers from 1 to 20 using for loop.or wap to print first 10 odd numbers using for loop.
+
+
+for i in range(1, 21):
+    if i%2!=0:
+        print(i)
+
+#wap to print all the odd numbers from 1 to 20 using while loop.
+
+i=1
+while i<=20:
+    if i%2!=0:
+        print(i)
+    i+=1
