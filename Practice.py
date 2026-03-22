@@ -97,4 +97,10 @@ while i<=20:
 for i in range(1, 21):
     if i%2==0:
         print(i)
-        
+
+
+
+charge = [50, 25, 25]  # Create a list of charges.
+refund = sum(charge[:2])  # Add first two charges: 50 + 25 = 75.
+charge.remove(25)  # Remove the first occurrence of 25 from the list.
+print(sum(charge) - refund)  # Print remaining total minus refund amount.
