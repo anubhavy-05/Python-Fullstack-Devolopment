@@ -91,10 +91,26 @@ while True:
 
 
 
+#WAP to check the number is prime or not. Take the number as input from the user.   
+
+number=int(input("Enter a number:"))
+if number>1:
+    for i in range(2,number):
+        if number%i==0:
+            print("The number is not prime.")
+            break
+    else:
+        print("The number is prime.")
 
 
-
-
+#WAP to print all the prime numbers from 1 to 100 using for loop.
+for num in range(1, 101):
+    if num > 1:
+        for i in range(2, num):
+            if num % i == 0:
+                break
+        else:
+            print(num)
 
 
 
