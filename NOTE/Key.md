@@ -81,3 +81,34 @@ example:2
 
 salary = 50000
 print(f"Salary: {salary:,}") # Output: 50,000 (comma lag jayega) 
+
+
+Eample:3 
+#WAP using f-string to Hii ! Mera name Anubhav hai aur mera lucky number 7 hai. Take the name and lucky number as input from the user.
+
+name="Anubhav"
+lucky_number=7
+print(f"Hi! My name is {name} and my lucky number is {lucky_number}.")
+
+                        #  OR
+
+
+#WAP using f-string to Hii ! Mera name Anubhav hai aur mera lucky number 7 hai. Take the name and lucky number as input from the user.
+
+
+name = input("Enter your name: ")
+lucky_number = int(input("Enter your lucky number: "))
+print(f"Hi! My name is {name} and my lucky number is {lucky_number}.")
+
+# we can also calculate in f string 
+
+a = 15
+b = 25
+
+# Bina kisi extra variable ke direct curly braces mein calculation
+print(f"Jab hum {a} aur {b} ko jodte hain, toh total {a + b} aata hai.")
+
+Isme kya hua?
+{a} ne 15 print kiya.
+{b} ne 25 print kiya.
+{a + b} ne pehle calculation ki (15 + 25 = 40) aur phir result print kiya.
