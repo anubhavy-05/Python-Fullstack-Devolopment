@@ -37,3 +37,27 @@ print(f"Value: {pi:.2f}") # Output: 3.14 (sirf 2 decimal tak)
 
 salary = 50000
 print(f"Salary: {salary:,}") # Output: 50,000 (comma lag jayega)
+
+# QUESTION 5
+
+#WAP using f-string to Hii ! Mera name Anubhav hai aur mera lucky number 7 hai. Take the name and lucky number as input from the user.
+
+name="Anubhav"
+lucky_number=7
+print(f"Hi! My name is {name} and my lucky number is {lucky_number}.")
+
+                        #  OR
+
+#WAP using f-string to Hii ! Mera name Anubhav hai aur mera lucky number 7 hai. Take the name and lucky number as input from the user.
+
+name = input("Enter your name: ")
+lucky_number = int(input("Enter your lucky number: "))
+print(f"Hi! My name is {name} and my lucky number is {lucky_number}.")
+
+
+
+
+
+
+
+ 
