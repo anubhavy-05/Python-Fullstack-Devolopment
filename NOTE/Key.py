@@ -1,5 +1,9 @@
 # QUESTION 1
 
+from tkinter.messagebox import QUESTION
+from unittest import result
+
+
 x=int(7.9) # Typecasting a float to an integer, which will truncate the decimal part and give 7.truncation means that the decimal part is removed and only the whole number part is kept.
 print(x) # Output: 7
 
@@ -16,3 +20,20 @@ z=round(7.8) # Rounds to the nearest integer.
 print(z) # Output: 8
 z=round(7.8, 1) # Rounds to 1 decimal place.
 print(z) # Output: 7.8
+
+
+# QUESTION 4
+
+age = 20
+text = "Age: "
+result = text + str(age) # Typecasting the integer age to a string and concatenating it with the text.
+
+print(result) # Output: "Age: 20"
+
+print(f"{text}{age}")
+
+pi = 3.14159
+print(f"Value: {pi:.2f}") # Output: 3.14 (sirf 2 decimal tak)
+
+salary = 50000
+print(f"Salary: {salary:,}") # Output: 50,000 (comma lag jayega)
