@@ -104,3 +104,18 @@ charge = [50, 25, 25]  # Create a list of charges.
 refund = sum(charge[:2])  # Add first two charges: 50 + 25 = 75.
 charge.remove(25)  # Remove the first occurrence of 25 from the list.
 print(sum(charge) - refund)  # Print remaining total minus refund amount.
+
+
+#WAP using f-string to Hii ! Mera name Anubhav hai aur mera lucky number 7 hai. Take the name and lucky number as input from the user.
+
+name="Anubhav"
+lucky_number=7
+print(f"Hi! My name is {name} and my lucky number is {lucky_number}.")
+
+                        #  OR
+
+#WAP using f-string to Hii ! Mera name Anubhav hai aur mera lucky number 7 hai. Take the name and lucky number as input from the user.
+
+name = input("Enter your name: ")
+lucky_number = int(input("Enter your lucky number: "))
+print(f"Hi! My name is {name} and my lucky number is {lucky_number}.")
