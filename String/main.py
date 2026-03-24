@@ -74,6 +74,28 @@ print(f"Hello, my name is {name} and I am {age} years old.")
 
 
 
+            #split and join 
+
+#The split() method is used to split a string into a list of substrings based on a specified delimiter (default is whitespace). The join() method is used to join a list of strings into a single string using a specified delimiter.
+sentence = "Hello, how are you?"
+words = sentence.split() # To split the sentence into a list of words.
+print(words)
+delimiter = "-"
+joined_sentence = delimiter.join(words) # To join the list of words into a single string using the delimiter.
+print(joined_sentence)  
+
+
+
+
+sentence = "Hello, how are you?"
+words = sentence.split() # To split the sentence into a list of words.
+print(words)
+delimiter = (' ') # To join the list of words into a single string using a space as a delimiter.        
+joined_sentence = delimiter.join(words) # To join the list of words into a single string using the  delimiter.
+print(joined_sentence)
+        
+
+
 
 
 
