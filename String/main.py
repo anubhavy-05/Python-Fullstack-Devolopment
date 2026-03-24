@@ -58,11 +58,19 @@ print(s1.split()) # To split s1 into a list of substrings based on whitespace.
 print("-".join(s1.split())) # To join the list of substrings in s1 into a single string using "-" as a delimiter.   
 
 
+                    #formated string literals (f-strings)
 
 
+ #formated string literals (f-strings) are a way to embed expressions inside string literals, using curly braces {}. They provide a concise and readable way to format strings in Python. The expressions inside the curly braces are evaluated at runtime and their values are inserted into the string.
 
 
+a,b=10,20
+print(f"The sum of {a} and {b} is {a+b}.") # Output: The sum of 10 and 20 is 30.
 
+
+name = "Alice"
+age = 30
+print(f"Hello, my name is {name} and I am {age} years old.")
 
 
 
