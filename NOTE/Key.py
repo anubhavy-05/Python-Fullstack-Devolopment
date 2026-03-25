@@ -91,6 +91,7 @@ print(a==b) # Output: True (the contents of the lists are the same)
 print(a is b) # Output: False (a and b are different objects in memory)
 
 # QUESTION 11
+
 x="10"
 if x==10:
     print("A")   
@@ -99,5 +100,21 @@ else:
 
 
 
+# QUESTION 12
 
- 
+x="A"
+y=5
+print(len(x*y)) # Output: 5 (the length of the string "A" repeated 5 times is 5 because it will create the string "AAAAA" which has 5 characters)
+            
+# QUESTION 13
+
+S="Hii"
+print(S*3+"!") # Output: "HiiHiiHii!" (the string "Hii" is repeated 3 times and then concatenated with "!")
+
+# QUESTION 14
+
+x=0
+if x:
+    print("Hello") # This will not be printed because 0 is considered False in Python.
+else:
+    print("world") # Output: "world" (since x is 0, the else block will be executed and "world" will be printed)
