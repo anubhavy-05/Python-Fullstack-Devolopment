@@ -76,7 +76,19 @@ cars = ["BMW", "Tesla", "Toyota","Audi"]
 for i in range(len(cars)):
     print(f"{i}: {cars[i]}") # Output: 0: BMW, 1: Tesla, 2: Toyota, 3: Audi
 
+# QUESTION 9
 
+print(len("hello\n")) # Output: 6 (the newline character \n is counted as one character)
+print(len("hello\t")) # Output: 6 (the tab character \t is counted as one character)
+print(len("hello\r")) # Output: 6 (the carriage return character \r is counted as one character)
+
+
+# QUESTION 10
+
+a=[1, 2, 3]
+b=[1, 2, 3]
+print(a==b) # Output: True (the contents of the lists are the same)
+print(a is b) # Output: False (a and b are different objects in memory)
 
 
 
