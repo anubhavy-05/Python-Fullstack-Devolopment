@@ -98,3 +98,52 @@ print(min(t1)) # Output: 5 (the smallest element in the tuple)
 print(sum(t1)) # Output: 50 (the sum of all elements in the tuple)
 print(sorted(t1)) # Output: [5, 10, 15, 20] (a sorted list of the elements in the tuple)
 print (tuple(reversed(t1))) # Output: (15, 20, 5, 10) (a tuple with the elements in reverse order)
+
+
+                  #concatination and repetition of tuples
+
+
+# EXAMPLE 1  
+               
+t2=(1,2,3)
+t3=(4,5,6)
+t4=t2+t3
+print(t4) # Output: (1, 2, 3, 4, 5, 6) (concatenating two tuples)
+
+# EXAMPLE 2
+
+t5=(1,2,3)
+t6=t5*3
+print(t6) # Output: (1, 2, 3, 1, 2, 3, 1, 2, 3) (repeating a tuple)
+
+                       
+                       #TUPLE OBJECT METHODS
+
+
+t1=(10,5,20,15)
+print(t1.index(20)) # Output: 2 (the index of the first occurrence of 20 in the tuple)
+print(t1.index(5))  # Output: 1 (the index of the first occurrence of 5 in the tuple)
+# print(t1.index(25)) # This will raise a ValueError because 25 is  not in the tuple        
+print(t1.count(10)) # Output: 1 (the number of times 10 appears in the tuple)
+print(t1.count(5))  # Output: 1 (the number of times    5 appears in the tuple)
+print(t1.count(25)) # Output: 0 (the number of times 25 appears in the tuple)                           
+   
+
+                        #slicing operator in tuples , t1[start:stop:step]
+
+t1=(10,5,20,15,25,30,35)
+print(t1[2:5])  # Output: (20, 15, 25) (elements from index 2 to 4)
+print(t1[:3])   # Output: (10, 5, 20) (elements from the beginning to index 2)
+print(t1[3:7])  # Output: (15, 25, 30, 35) (elements from index 3 to 6)
+print(t1[::2])  # Output: (10, 20, 25, 35) (every second element)
+print(t1[::-1]) # Output: (35, 30, 25, 15, 20, 5, 10) (all elements in reverse order)
+
+
+
+                     #input from user in tuples
+
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+person = (name, age)
+print("Person:", person) # Output: Person: ('Alice', 30) (assuming the user entered "Alice" and 30) 
+
