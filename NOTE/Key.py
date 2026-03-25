@@ -55,6 +55,17 @@ lucky_number = int(input("Enter your lucky number: "))
 print(f"Hi! My name is {name} and my lucky number is {lucky_number}.")
 
 
+# QUESTION 6
+
+score = 0
+result=score or "No score" # If score is 0, it will return "No score". If score is any non-zero value, it will return the score itself.
+print(result) # Output: "No score" because 0 is considered False in Python.
+
+
+
+
+
+
 
 
 
