@@ -112,3 +112,23 @@ Isme kya hua?
 {a} ne 15 print kiya.
 {b} ne 25 print kiya.
 {a + b} ne pehle calculation ki (15 + 25 = 40) aur phir result print kiya.
+
+# QUESTION 7 EXPLAINATION
+
+cars = ["BMW", "Tesla", "Toyota","Audi"]
+for i in range(len(cars)):
+    if cars[i].startswith("T"):
+        cars.pop(i) 
+print(cars) 
+
+
+​Initial List: ["BMW", "Tesla", "Toyota", "Audi"] (Indices: 0, 1, 2, 3)
+​Iteration 0 (i=0): cars[0] is "BMW". "T" se shuru nahi hota. Kuch nahi hua.
+​Iteration 1 (i=1): cars[1] is "Tesla". Yeh "T" se shuru hota hai, toh cars.pop(1) execute hua.
+​Result: "Tesla" list se bahar nikal gaya.
+​Ab list aisi dikhti hai: ["BMW", "Toyota", "Audi"]
+​The Catch (Index Shift): Jaise hi "Tesla" hat gaya, "Toyota" ab index 1 par aa gaya aur "Audi" index 2 par.
+​Iteration 2 (i=2): Ab loop index 2 par check karega. Lekin naye list mein index 2 par "Audi" hai (kyunki Toyota peeche shift ho chuka hai).
+​"Audi" "T" se shuru nahi hota. Kuch nahi hua.
+​Loop End: range(len(cars)) shuruat mein 4 tha, toh loop wahi ruk jayega.
+
