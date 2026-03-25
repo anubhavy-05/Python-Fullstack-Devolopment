@@ -90,8 +90,12 @@ b=[1, 2, 3]
 print(a==b) # Output: True (the contents of the lists are the same)
 print(a is b) # Output: False (a and b are different objects in memory)
 
-
-
+# QUESTION 11
+x="10"
+if x==10:
+    print("A")   
+else:
+    print(x*2) # Output: "1010" (since x is a string, it will be concatenated with itself when multiplied by 2)
 
 
 
