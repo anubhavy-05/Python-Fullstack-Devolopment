@@ -61,9 +61,20 @@ score = 0
 result=score or "No score" # If score is 0, it will return "No score". If score is any non-zero value, it will return the score itself.
 print(result) # Output: "No score" because 0 is considered False in Python.
 
+# QUESTION 7
+
+cars = ["BMW", "Tesla", "Toyota","Audi"]
+for i in range(len(cars)):
+    if cars[i].startswith("T"):
+        cars.pop(i) 
+print(cars)               # This will remove the element at index i from the list. However, modifying a list while iterating over it can lead to unexpected behavior, such as skipping elements or causing an IndexError. It is generally not recommended to modify a list while iterating over it.
+
+# QUESTION 8
 
 
-
+cars = ["BMW", "Tesla", "Toyota","Audi"]
+for i in range(len(cars)):
+    print(f"{i}: {cars[i]}") # Output: 0: BMW, 1: Tesla, 2: Toyota, 3: Audi
 
 
 
