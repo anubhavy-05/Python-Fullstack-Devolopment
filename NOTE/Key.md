@@ -122,13 +122,39 @@ for i in range(len(cars)):
 print(cars) 
 
 
-​Initial List: ["BMW", "Tesla", "Toyota", "Audi"] (Indices: 0, 1, 2, 3)
-​Iteration 0 (i=0): cars[0] is "BMW". "T" se shuru nahi hota. Kuch nahi hua.
-​Iteration 1 (i=1): cars[1] is "Tesla". Yeh "T" se shuru hota hai, toh cars.pop(1) execute hua.
+1.​Initial List: ["BMW", "Tesla", "Toyota", "Audi"] (Indices: 0, 1, 2, 3)
+2.​Iteration 0 (i=0): cars[0] is "BMW". "T" se shuru nahi hota. Kuch nahi hua.
+3.​Iteration 1 (i=1): cars[1] is "Tesla". Yeh "T" se shuru hota hai, toh cars.pop(1) execute hua.
 ​Result: "Tesla" list se bahar nikal gaya.
 ​Ab list aisi dikhti hai: ["BMW", "Toyota", "Audi"]
-​The Catch (Index Shift): Jaise hi "Tesla" hat gaya, "Toyota" ab index 1 par aa gaya aur "Audi" index 2 par.
-​Iteration 2 (i=2): Ab loop index 2 par check karega. Lekin naye list mein index 2 par "Audi" hai (kyunki Toyota peeche shift ho chuka hai).
+4.​The Catch (Index Shift): Jaise hi "Tesla" hat gaya, "Toyota" ab index 1 par aa gaya aur "Audi" index 2 par.
+5.​Iteration 2 (i=2): Ab loop index 2 par check karega. Lekin naye list mein index 2 par "Audi" hai (kyunki Toyota peeche shift ho chuka hai).
 ​"Audi" "T" se shuru nahi hota. Kuch nahi hua.
-​Loop End: range(len(cars)) shuruat mein 4 tha, toh loop wahi ruk jayega.
+6.​Loop End: range(len(cars)) shuruat mein 4 tha, toh loop wahi ruk jayega.
 
+# QUESTION 10
+
+a=[1, 2, 3]
+b=[1, 2, 3]
+print(a==b) # Output: True (the contents of the lists are the same)
+print(a is b) # Output: False (a and b are different objects in memory)
+
+1. == (Equality Operator)
+Ye sirf Value check karta hai.
+Aapne a mein [1,2,3] rakha aur b mein bhi [1,2,3].
+Kyunki dono lists ke andar ka data bilkul same hai, isliye a == b ka result True aaya.
+Sochiye: Do alag-alag ghar hain, lekin dono ka design ek jaisa hai.
+2. is (Identity Operator)
+Ye Memory Address (Object Identity) check karta hai.
+Jab aap a = [1,2,3] likhte hain, Python memory mein ek jagah (Object) banata hai.
+Jab aap b = [1,2,3] likhte hain, Python memory mein ek doosri alag jagah banata hai, bhale hi data same ho.
+Kyunki a aur b do alag objects ko point kar rahe hain, isliye a is b ka result False aaya.
+Sochiye: Do alag-alag ghar hain. Design same ho sakta hai, lekin unka address (Location) alag hai.
+Ek Interesting Twist (Anubhav, dhyan se dekhna!)
+Agar aap code ko thoda badal dein:
+
+a = [1,2,3]
+b = a  # Yahan humne b ko a ka reference de diya
+print(a is b)
+
+Ab output True aayega! Kyunki ab b koi naya object nahi hai, balki wo usi memory location ko point kar raha hai jahan a hai.
