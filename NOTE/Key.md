@@ -139,13 +139,13 @@ b=[1, 2, 3]
 print(a==b) # Output: True (the contents of the lists are the same)
 print(a is b) # Output: False (a and b are different objects in memory)
 
-1. == (Equality Operator)
-Ye sirf Value check karta hai.
+# == (Equality Operator)
+1.Ye sirf Value check karta hai.
 Aapne a mein [1,2,3] rakha aur b mein bhi [1,2,3].
 Kyunki dono lists ke andar ka data bilkul same hai, isliye a == b ka result True aaya.
 Sochiye: Do alag-alag ghar hain, lekin dono ka design ek jaisa hai.
-2. is (Identity Operator)
-Ye Memory Address (Object Identity) check karta hai.
+#  is (Identity Operator)
+2.Ye Memory Address (Object Identity) check karta hai.
 Jab aap a = [1,2,3] likhte hain, Python memory mein ek jagah (Object) banata hai.
 Jab aap b = [1,2,3] likhte hain, Python memory mein ek doosri alag jagah banata hai, bhale hi data same ho.
 Kyunki a aur b do alag objects ko point kar rahe hain, isliye a is b ka result False aaya.
@@ -154,7 +154,24 @@ Ek Interesting Twist (Anubhav, dhyan se dekhna!)
 Agar aap code ko thoda badal dein:
 
 a = [1,2,3]
-b = a  # Yahan humne b ko a ka reference de diya
+b = a         # Yahan humne b ko a ka reference de diya
 print(a is b)
 
 Ab output True aayega! Kyunki ab b koi naya object nahi hai, balki wo usi memory location ko point kar raha hai jahan a hai.
+
+
+# QUESTION 11
+
+x="10"
+if x==10:
+    print("A")   
+else:
+    print(x*2)
+
+
+1. Pehla Step: Comparison (if x == 10)
+
+Yahan par x ki value hai "10" (dhayan dijiye, yeh quotes mein hai, matlab yeh ek String hai).
+Lekin hum ise compare kar rahe hain 10 se (jo ek Integer hai).
+Python mein ek String aur ek Integer kabhi bhi barabar (equal) nahi ho sakte, bhale hi unka chehra ek jaisa dikhe.
+Isliye x == 10 ka result False aayega aur code else block mein chala jayega.
