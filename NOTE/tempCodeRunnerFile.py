@@ -1,7 +1,5 @@
-
-x=int(input("Enter a number:"))
-if x >= 50 or "vip":
-    print("You are a VIP customer.")
-else:   
-    print("You are a regular customer.")
- 
+cars = ["BMW", "Tesla", "Toyota","Audi"]
+for i in range(len(cars)):
+    if cars[i].startswith("T"):
+        cars.pop(i) 
+print(cars)   
