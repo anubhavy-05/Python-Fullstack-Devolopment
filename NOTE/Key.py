@@ -139,3 +139,8 @@ y=x
 y.append(4) # This will modify the list that both x and y reference, since they point to the same list in memory.
 print(x) # Output: [1, 2, 3, 4] (the list has been modified through y, and since x references the same list, it reflects the change)
 print(y) # Output: [1, 2, 3, 4] (y also shows the modified list)
+
+
+# QUESTION 17
+
+print(0.1 + 0.2 == 0.3) # Output: False (due to floating-point precision issues in Python, the sum of 0.1 and 0.2 does not exactly equal 0.3, resulting in False)
