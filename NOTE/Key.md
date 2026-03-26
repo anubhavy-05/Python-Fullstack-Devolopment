@@ -175,3 +175,24 @@ Yahan par x ki value hai "10" (dhayan dijiye, yeh quotes mein hai, matlab yeh ek
 Lekin hum ise compare kar rahe hain 10 se (jo ek Integer hai).
 Python mein ek String aur ek Integer kabhi bhi barabar (equal) nahi ho sakte, bhale hi unka chehra ek jaisa dikhe.
 Isliye x == 10 ka result False aayega aur code else block mein chala jayega.
+
+
+# QUESTION 15
+
+
+
+Chalo is trick question ka logic step-by-step samajhte hain:
+
+Yahan x = [] (ek empty list) hai. Python mein in conditions ko aise evaluate kiya jata hai:
+
+if x == False:
+Halanki empty list ek "Falsy" value hoti hai, par wo exact boolean False ke barabar (==) nahi hoti. Ek list aur ek boolean alag-alag data types hain. Isliye yeh condition False ho jayegi aur code aage badh jayega.
+
+elif x is False:
+is operator memory identity (kya dono exactly same object hain?) check karta hai. Ek list aur ek boolean value memory mein alag-alag objects hote hain. Isliye yeh condition bhi False ho jayegi.
+
+elif not x:
+Yahan aakar game change hota hai! not operator variable ki "truthiness" check karta hai. Python mein empty list [] ko Falsy mana jata hai. Toh jab hum not x likhte hain, toh wo not False jaisa behave karta hai, jo ki True ban jata hai. Yeh condition satisfy ho gayi!
+
+Result:
+Condition match hone par "Spider-Man" print ho jayega aur uske aage ka else block ignore ho jayega.
