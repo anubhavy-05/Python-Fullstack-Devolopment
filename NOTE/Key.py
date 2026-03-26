@@ -118,3 +118,15 @@ if x:
     print("Hello") # This will not be printed because 0 is considered False in Python.
 else:
     print("world") # Output: "world" (since x is 0, the else block will be executed and "world" will be printed)
+
+# QUESTION 15
+
+x=[]
+if x == False:
+    print("Btsman") # This will not be printed because an empty list is not equal to False.
+elif x is False:
+        print("Iron man") # This will not be printed because an empty list is not the same object as False.
+elif not x:
+        print("Spiderman") # Output: "Spiderman" (since an empty list is considered False in a boolean context, the not operator will evaluate to True and "Spiderman  " will be printed)
+else:
+        print("Superman")  # This will not be printed because the previous condition is already satisfied.
