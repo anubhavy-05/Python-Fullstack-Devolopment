@@ -196,3 +196,24 @@ Yahan aakar game change hota hai! not operator variable ki "truthiness" check ka
 
 Result:
 Condition match hone par "Spider-Man" print ho jayega aur uske aage ka else block ignore ho jayega.
+
+
+# QUESTION 16
+
+Chalo is trick ka logic samajhte hain, jo Python ke memory management par based hai:
+
+Logic Explanation
+List Creation (x = [1, 2, 3]): Yahan memory mein ek list object create hota hai jisme [1, 2, 3] store hota hai, aur variable x us object ko point karne lagta hai.
+
+Reference Assignment (y = x): Yeh is code ka sabse crucial step hai! Python mein jab hum list ko aise assign karte hain, toh ek nayi list nahi banti. Balki, y bhi usi same memory location (usi same list) ko point karne lagta hai jise x kar raha hai. Is concept ko Aliasing kehte hain.
+
+Modification (y.append(4)): Jab hum y mein 4 append karte hain, toh wo original list mein jaakar add ho jata hai. Kyunki x aur y dono ek hi list se jude hain, wo list ab [1, 2, 3, 4] ban chuki hai.
+
+Final Output (print(x)): Jab hum x ko print karte hain, toh wo usi updated list ko dikhata hai, isliye output [1, 2, 3, 4] aata hai.
+
+Quick Tip:
+Agar aap chahte the ki y ek bilkul alag list bane aur usme change karne par x par koi asar na pade, toh aapko copy banani padti. Jaise ki:
+
+y = x.copy() ya
+
+y = x[:] (Slicing method)
