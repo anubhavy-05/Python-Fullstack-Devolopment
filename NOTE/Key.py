@@ -130,3 +130,12 @@ elif not x:
         print("Spiderman") # Output: "Spiderman" (since an empty list is considered False in a boolean context, the not operator will evaluate to True and "Spiderman  " will be printed)
 else:
         print("Superman")  # This will not be printed because the previous condition is already satisfied.
+
+
+# QUESTION 16
+
+x=[1, 2, 3]
+y=x
+y.append(4) # This will modify the list that both x and y reference, since they point to the same list in memory.
+print(x) # Output: [1, 2, 3, 4] (the list has been modified through y, and since x references the same list, it reflects the change)
+print(y) # Output: [1, 2, 3, 4] (y also shows the modified list)
