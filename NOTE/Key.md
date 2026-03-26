@@ -217,3 +217,22 @@ Agar aap chahte the ki y ek bilkul alag list bane aur usme change karne par x pa
 y = x.copy() ya
 
 y = x[:] (Slicing method)
+
+# QUESTION 17
+
+
+Gemini said
+Sahi answer hai B) False.
+
+Dekhne mein yeh thoda ajeeb lag sakta hai ki 0.1 + 0.2 exact 0.3 kyun nahi hai, par iske peeche ek classic computer science concept hai jise Floating-Point Precision kehte hain.
+
+Logic Explanation
+
+1. Binary Representation: Hum numbers ko base-10 (decimal) mein sochte hain, par computers unhe base-2 (binary) mein store karte hain. Jaise fraction 1/3 ko decimal mein exact likhna mushkil hai (0.3333...), bilkul waise hi decimals 0.1 aur 0.2 ko binary mein exact represent nahi kiya ja sakta; unka binary fraction infinitely repeat hota hai.
+
+2. Approximation: Kyunki exact representation possible nahi hai, Python (aur IEEE 754 standard follow karne wali lagbhag saari programming languages) in numbers ko ek bohot hi close approximate value ke roop mein round off karke store karti hain.
+
+3. The Addition: Jab Python memory mein 0.1 aur 0.2 ke approximate binary equivalents ko add karta hai, toh us addition ka actual internal result 0.3 nahi banta. Wo kuch is tarah nikal kar aata hai:
+0.1 + 0.2 = 0.30000000000000004
+
+4. Equality Check (==): Ab jab interpreter evaluate karta hai ki kya 0.30000000000000004 == 0.3, toh dono values perfectly match nahi karti. Isliye output False aata hai.
