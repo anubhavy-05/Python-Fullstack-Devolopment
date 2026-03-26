@@ -236,3 +236,22 @@ Logic Explanation
 0.1 + 0.2 = 0.30000000000000004
 
 4. Equality Check (==): Ab jab interpreter evaluate karta hai ki kya 0.30000000000000004 == 0.3, toh dono values perfectly match nahi karti. Isliye output False aata hai.
+
+
+# QUESTION 18
+
+
+Sahi answer hai A) 5555.
+
+Chalo dekhte hain iska logic kaise kaam karta hai:
+
+Logic Explanation
+String vs Integer: a = '5' mein jo 5 hai wo single quotes '' ke andar hai. Iska matlab yeh ek string (text) hai, math wala number (integer) nahi.
+
+String Replication (a * 3): Jab hum kisi string ko integer (jaise 3) se multiply karte hain, toh wo utni baar repeat hoti hai.
+
+'5' * 3 evaluate hokar '555' ban jayega.
+
+String Concatenation (+ "5"): Ab humare paas '555' hai aur code usme + "5" kar raha hai. Strings ke case mein + operator dono texts ko aapas mein chipka (join) deta hai.
+
+'555' + '5' milkar '5555' ban jayega.
