@@ -101,7 +101,9 @@ print(s1 >= s2) # Output: False (s1 is a superset of s2 if all elements of s2 ar
 #union() method is used to return a new set that contains all the unique elements from both sets. It can also be used with the | operator.
 #intersection() method is used to return a new set that contains only the elements that are present in both sets. It can also be used with the & operator.
 #difference() method is used to return a new set that contains the elements that are present in the first set but not in the second set. It can also be used with the - operator.
-#symmetric_difference() method is used to return a new set that contains the elements that are present in either set but not in both sets. It can also be used with the ^ operator. 
+#symmetric_difference() method is used to return a new set that contains the elements that are present in either set but not in both sets. It can also be used with the ^ operator.
+
+# EXAMPLE:1
 
 s1 = {1, 2, 3, 4, 5}
 s1.add(6) # To add an element to the set s1.
@@ -114,3 +116,22 @@ print(s1.pop()) # To remove and return an arbitrary element from the set s1.
 print(s1) # Output: {2, 5, 6} (the set s1 after popping an arbitrary element, but since sets are unordered, there is no guarantee which element will be removed when using pop())
 print(s1.clear()) # To remove all elements from the set s1.
 print(s1) # Output: set() (the set s1 after clearing all elements, resulting in an empty set)
+
+
+#EXAMPLE:2
+
+s2 = {5, 6, 7, 8, 9, 10}
+s2.add(11) # To add an element to the set s2.
+print(s2) # Output: {5, 6, 7, 8, 9, 10, 11} (the set s2 after adding the element 11)
+print(s2.remove(7)) # To remove the element 7 from the set s2. This will raise a KeyError if 7 is not in the set.
+print(s2) # Output: {5, 6, 8, 9, 10, 11} (the set s2 after removing the element 7)
+print(s2.discard(8)) # To remove the element 8 from the set s2. This will not raise an error if 8 is not in the set.
+print(s2) # Output: {5, 6, 9, 10, 11} (the set s2 after discarding the element 8)
+print(s2.pop()) # To remove and return an arbitrary element from the set s2.   
+
+s2.update({12, 13, 14}) # To add multiple elements to the set s2 using the update() method.
+print(s2) # Output: {5, 6, 9, 10, 11, 12, 13, 14} (the set s2 after adding multiple elements using the update() method)
+s2.update([15, 16, 17]) # To add multiple elements to the   set s2 using the update() method with a list.
+print(s2) # Output: {5, 6, 9, 10, 11, 12, 13, 14, 15, 16, 17} (the set s2 after adding multiple elements using the update() method with a list)
+
+s2.update(18) #  This will raise a TypeError because the update() method expects an iterable argument, but you are passing a single integer. To add a single element to the set using the update() method, you can pass it as a set or a list, like this: s2.update({18}) or s2.update([18]) which will add the element 18 to the set s2.
