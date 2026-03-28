@@ -139,3 +139,10 @@ print(s1) # Output: {2, 5, 6} (the set s1 after popping an arbitrary element, bu
 print(s1.clear()) # To remove all elements from the set s1.
 
 print(s1) # Output: set() (the set s1 after clearing all elements, resulting in an empty set)
+
+# NOTE
+
+# EXAMPLE:2
+
+s2 = {5, 6, 7, 8, 9, 10}
+s2.update(18) #  This will raise a TypeError because the update() method expects an iterable argument, but you are passing a single integer. To add a single element to the set using the update() method, you can pass it as a set or a list, like this: s2.update({18}) or s2.update([18]) which will add the element 18 to the set s2.
