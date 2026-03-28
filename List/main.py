@@ -96,4 +96,12 @@ while i!=0:
     print(i)
     i+=1
 
+   
+                        #   examples
 
+
+
+#wap to remove duplicates from a list
+Marks=[90, 80, 70, 60, 50, 70, 80]
+unique_marks=list(set(Marks)) # To remove duplicates from the list by converting it to a set and then back to a list.
+print("The unique marks are:", unique_marks)
