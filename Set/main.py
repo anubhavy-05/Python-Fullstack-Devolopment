@@ -3,6 +3,9 @@
                              # set 
 
 
+from numpy import rint
+
+
 s1 = {1, 2, 3, 4, 5}
 print(s1) # Output: {1, 2, 3, 4, 5} (sets are unordered collections of unique elements)
 print(type(s1)) # Output: <class 'set'> (s1  is a set)
@@ -84,3 +87,30 @@ print(s1 >= s2) # Output: False (s1 is a superset of s2 if all elements of s2 ar
 # sets are unordered collections of unique elements, so the order of the elements in a set does not matter when comparing sets. Therefore, the comparison operators will return the same result regardless of the order of the elements in the sets.
 # For example, if we have s3 = {3, 2, 1}, then s1 == s3 will return True because both sets contain the same elements, even though they are in a different order. Similarly, s1 < s3 will return False because s1 is not a proper subset of s3, and s1 > s3 will also return False because s1 is not a proper superset of s3.
 # In summary, when comparing sets in Python, the order of the elements does not affect the comparison results, and the comparison operators will return the same result regardless of the order of the elements in the sets.
+
+
+
+
+
+#set object methods,in Python, sets have several built-in methods that allow you to perform various operations on sets. Here are some commonly used set methods: thier working is explained in the comments of the code below.
+#add() method is used to add an element to a set. If the element already exists in the set, it will not be added again since sets do not allow duplicate elements.
+#remove() method is used to remove a specific element from a set. If the element does not exist in the set, it will raise a KeyError.
+#discard() method is used to remove a specific element from a set. If the element does not exist in the set, it will not raise an error and will simply do nothing.
+#pop() method is used to remove and return an arbitrary element from a set. Since sets are unordered, there is no guarantee which element will be removed when using pop().
+#clear() method is used to remove all elements from a set, resulting in an empty set.
+#union() method is used to return a new set that contains all the unique elements from both sets. It can also be used with the | operator.
+#intersection() method is used to return a new set that contains only the elements that are present in both sets. It can also be used with the & operator.
+#difference() method is used to return a new set that contains the elements that are present in the first set but not in the second set. It can also be used with the - operator.
+#symmetric_difference() method is used to return a new set that contains the elements that are present in either set but not in both sets. It can also be used with the ^ operator. 
+
+s1 = {1, 2, 3, 4, 5}
+s1.add(6) # To add an element to the set s1.
+print(s1) # Output: {1, 2, 3, 4, 5, 6} (the set s1 after adding the element 6) but since sets do not allow duplicate elements, if you try to add an element that already exists in the set, it will not be added again. For example, if you try to add 3 to s1 again using s1.add(3), the set will remain unchanged as {1, 2, 3, 4, 5, 6} because 3 is already an element of the set.,order of elements in a set is not guaranteed, so the output may not be in the same order as the input.it takes any order of the elements in the set when printing.
+print(s1.remove(3)) # To remove the element 3 from the set s1. This will raise a KeyError if 3 is not in the set.
+print(s1) # Output: {1, 2, 4, 5, 6} (the set s1 after removing the element 3)
+print(s1.discard(4)) # To remove the element 4 from the set s1. This will not raise an error if 4 is not in the set.
+print(s1) # Output: {1, 2, 5, 6} (the set s1 after discarding the element 4)
+print(s1.pop()) # To remove and return an arbitrary element from the set s1. 
+print(s1) # Output: {2, 5, 6} (the set s1 after popping an arbitrary element, but since sets are unordered, there is no guarantee which element will be removed when using pop())
+print(s1.clear()) # To remove all elements from the set s1.
+print(s1) # Output: set() (the set s1 after clearing all elements, resulting in an empty set)
