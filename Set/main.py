@@ -54,3 +54,15 @@ print(min(s2)) # Output: "apple" (the smallest element in the set based on alpha
 print(sum(s2)) # This will raise a TypeError because the sum() function cannot be applied to a set of strings. The sum() function is designed to work with numeric data types, and it cannot be used to concatenate strings or perform any other operation on non-numeric data. If you want to concatenate the strings in the set, you can use the join() method instead, like this: "".join(s2) which will concatenate all the strings in the set into a single string.
 print(sorted(s2)) # Output: ['apple', 'banana', 'cherry', 'date', 'fig'] (a sorted list of the elements in the set based on alphabetical order)
 print(set(reversed(s2))) # Output: {'fig', 'date', 'cherry', 'banana', 'apple'} (a set with the elements in reverse order, but since sets are unordered, the output may not be in the same order as the input)
+
+
+                     #concatination and repetition of sets
+s1 = {1, 2, 3}
+s2 = {4, 5, 6}  
+s3 = s1.union(s2) # To concatenate two sets, you can use the union() method or the | operator.
+print(s3) # Output: {1, 2, 3, 4, 5, 6} (the union of s1 and s2) 
+print(s1 | s2) # Output: {1, 2, 3, 4, 5, 6} (the union of s1 and s2 using the | operator)
+print(s1 * 3) # This will raise a TypeError because sets do not support repetition using the * operator. The * operator is designed to work with sequences like lists and tuples, but it cannot be used with sets because sets are unordered collections of unique elements. If you want to create a new set that contains multiple copies of the same elements, you can use the union() method or the | operator to combine the set with itself multiple times, like this: s1.union(s1).union(s1) or s1 | s1 | s1 which will create a new set that contains three copies of each element in s1, but since sets do not allow duplicate elements, the resulting set will still only contain one copy of each element.
+print(s1.union(s1).union(s1)) # Output: {1, 2, 3} (a new set that contains three copies of each element in s1, but since sets do not allow duplicate elements, the resulting set still only contains one copy of each element)
+print(s1 | s1 | s1) # Output: {1, 2, 3} (a new set that contains three copies of each element in s1 using the | operator, but since sets do not allow duplicate elements, the resulting set still only contains one copy of each element)
+print(s1+s2) # This will raise a TypeError because sets do not support concatenation using the + operator. The + operator is designed to work with sequences like lists and tuples, but it cannot be used with sets because sets are unordered collections of unique elements. If you want to create a new set that contains all the elements from both sets, you can use the union() method or the | operator, like this: s1.union(s2) or s1 | s2 which will create a new set that contains all the unique elements from both sets.    
