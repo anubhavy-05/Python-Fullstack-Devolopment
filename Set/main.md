@@ -146,3 +146,12 @@ print(s1) # Output: set() (the set s1 after clearing all elements, resulting in 
 
 s2 = {5, 6, 7, 8, 9, 10}
 s2.update(18) #  This will raise a TypeError because the update() method expects an iterable argument, but you are passing a single integer. To add a single element to the set using the update() method, you can pass it as a set or a list, like this: s2.update({18}) or s2.update([18]) which will add the element 18 to the set s2.
+
+
+# NOTE 2
+
+s1 = {1, 2, 3, 4, 5}
+s1.add((6, 7)) # To add a tuple as an element to the set s1. This will work because tuples are immutable and can be added to a set, but the entire tuple will be treated as a single element in the set. So, after adding the tuple (6, 7) to s1, the set will contain the elements {1, 2, 3, 4, 5, (6, 7)}. However, if you try to add a list or another set as an element to the set s1 using s1.add([8, 9]) or s1.add({10, 11}), it will raise a TypeError because lists and sets are mutable and cannot be added to a set as elements.
+
+
+s1.update((8, 9)) # To add multiple elements to the set s1 using the update() method with a tuple. This will work because the update() method can take any iterable as an argument, and it will add each element of the iterable to the set. So, after updating s1 with the tuple (8, 9), the set will contain the elements {1, 2, 3, 4, 5, (6, 7), 8, 9}. However, if you try to update the set s1 with a list or another set using s1.update([10, 11]) or s1.update({12, 13}), it will work because the update() method can take any iterable as an argument, and it will add each element of the iterable to the set. So, after updating s1 with the list [10, 11] or the set {12, 13}, the set will contain the elements {1, 2, 3, 4, 5, (6, 7), 8, 9, 10, 11} or {1, 2, 3, 4, 5, (6, 7), 8, 9, 12, 13} respectively.  
