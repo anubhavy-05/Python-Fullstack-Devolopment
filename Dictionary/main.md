@@ -85,3 +85,13 @@ print(employees["emp1"]["name"])  # Ravi
 Dictionary is one of the most useful Python data structures.
 Use it when you need to map one thing (key) to another thing (value).
 
+
+
+# NOTE
+
+IF we acess a key that is not in dictionar and we try to modify that like my_dict["gender"]=male then it will add a new key-value pair to the dictionary. If we try to access a key that is not in the dictionary without modifying it, it will raise a KeyError. For example, if we try to access my_dict["gender"] without assigning a value to it, it will raise a KeyError because the key "gender" does not exist in the dictionary. However, if we assign a value to the key "gender" like my_dict["gender] = "male", it will add the key "gender" with the value "male" to the dictionary without raising an error.       
+
+#example:1
+my_dict = {"name": "Alice", "age": 30, "city": "New York"}  
+print(my_dict["gender"]) # This will raise a KeyError because the key "gender" does not exist in the dictionary.  but if we do my_dict["gender"] = "male" then it will add the key "gender" with the value "male" to the dictionary without raising an error.  
+
