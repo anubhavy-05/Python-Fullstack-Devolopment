@@ -144,3 +144,14 @@ s1.add((6, 7)) # To add a tuple as an element to the set s1. This will work beca
 
 
 s1.update((8, 9)) # To add multiple elements to the set s1 using the update() method with a tuple. This will work because the update() method can take any iterable as an argument, and it will add each element of the iterable to the set. So, after updating s1 with the tuple (8, 9), the set will contain the elements {1, 2, 3, 4, 5, (6, 7), 8, 9}. However, if you try to update the set s1 with a list or another set using s1.update([10, 11]) or s1.update({12, 13}), it will work because the update() method can take any iterable as an argument, and it will add each element of the iterable to the set. So, after updating s1 with the list [10, 11] or the set {12, 13}, the set will contain the elements {1, 2, 3, 4, 5, (6, 7), 8, 9, 10, 11} or {1, 2, 3, 4, 5, (6, 7), 8, 9, 12, 13} respectively.   
+
+
+
+
+# SET COMPREHENSION
+# Set comprehension is a concise way to create sets. It consists of curly braces containing an expression followed by a for clause, then zero or more for or if clauses. The expressions can be anything, meaning you can put in all kinds of objects in sets. For example: 
+
+squared_set = {x**2 for x in range(10)} # To create a new set of squared numbers from 0 to 9 using set comprehension.
+print(squared_set) # Output: {0, 1, 4, 9, 16, 25, 36, 49, 64, 81} (a set of squared numbers from 0 to 9)        
+
+# EXAMPLE:2
