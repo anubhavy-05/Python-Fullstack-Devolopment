@@ -146,5 +146,11 @@ print(y) # Output: [1, 2, 3, 4] (y also shows the modified list)
 print(0.1 + 0.2 == 0.3) # Output: False (due to floating-point precision issues in Python, the sum of 0.1 and 0.2 does not exactly equal 0.3, resulting in False)
 
 # QUESTION 18
+
 a = '5'
 print(a*3+"5") # Output: "5555" (the string '5' is repeated 3 times and then concatenated with '5')
+
+
+# QUESTION 19
+
+print(0.1 + 0.2) # Output: 0.30000000000000004 (due to floating-point precision issues in Python, the sum of 0.1 and 0.2 does not exactly equal 0.3, resulting in a value that is very close to 0.3 but not exactly equal)
