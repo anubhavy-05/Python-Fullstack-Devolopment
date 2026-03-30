@@ -64,7 +64,11 @@ print(my_dict["gender"]) # This will raise a KeyError because the key "gender" d
 
 
 
-                  #BUILT-IN METHODS FOR DICTIONARIES,THERE ARE SEVERAL BUILT-IN METHODS AVAILABLE FOR DICTIONARIES IN PYTHON. SOME OF THE MOST COMMONLY USED METHODS INCLUDE:LEN(), GET(), KEYS(), VALUES(), ITEMS(), UPDATE(), POP(), POPITEM(), CLEAR(), COPY(), FROMKEYS(). example:1
+                  #BUILT-IN METHODS FOR DICTIONARIES,
+                  
+                  # THERE ARE SEVERAL BUILT-IN METHODS AVAILABLE FOR DICTIONARIES IN PYTHON. SOME OF THE MOST COMMONLY USED METHODS INCLUDE:LEN(), GET(), KEYS(), VALUES(), ITEMS(), UPDATE(), POP(), POPITEM(), CLEAR(), COPY(), FROMKEYS().
+
+#  example:1
 
 
 my_dict = {"name": "Alice", "age": 30, "city": "New York"}
