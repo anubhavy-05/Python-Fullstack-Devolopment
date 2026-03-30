@@ -60,5 +60,24 @@ print(my_dict)  # Output: {"name": "Alice", "age": 31, "email": "alice@example.c
 my_dict = {"name": "Alice", "age": 30, "city": "New York"}  
 print(my_dict["gender"]) # This will raise a KeyError because the key "gender" does not exist in the dictionary.  but if we do my_dict["gender"] = "male" then it will add the key "gender" with the value "male" to the dictionary without raising an error.     
 
-    
-    
+
+
+
+
+                  #BUILT-IN METHODS FOR DICTIONARIES,THERE ARE SEVERAL BUILT-IN METHODS AVAILABLE FOR DICTIONARIES IN PYTHON. SOME OF THE MOST COMMONLY USED METHODS INCLUDE:LEN(), GET(), KEYS(), VALUES(), ITEMS(), UPDATE(), POP(), POPITEM(), CLEAR(), COPY(), FROMKEYS(). example:1
+
+
+my_dict = {"name": "Alice", "age": 30, "city": "New York"}
+print(len(my_dict))  # Output: 3 (the number of key-value pairs in the dictionary)
+print(my_dict.get("name"))  # Output: "Alice" (using the get method to access values)
+print(my_dict.keys())  # Output: dict_keys(['name', 'age', 'city']) (to get all keys in the dictionary)
+print(my_dict.values())  # Output: dict_values(['Alice', 30, 'New York']) (to get all values in the dictionary)
+print(my_dict.items())  # Output: dict_items([('name', 'Alice'), ('age', 30), ('city', 'New York')]) (to get all key-value pairs in the dictionary as tuples)
+my_dict.update({"email": "alice@example.com"})  # Adding a new key-value pair
+print(my_dict)  # Output: {"name": "Alice", "age": 30, "city": "New York", "email": "alice@example.com"}
+my_dict.pop("age")  # Removing the key-value pair with the key "age"
+print(my_dict)  # Output: {"name": "Alice", "city": "New York", "email": "alice@example.com"}   
+print(max(my_dict))  # Output: "name" (the maximum key in the dictionary based on lexicographical order is "name" because it comes last alphabetically among the keys "name", "city", and "email")
+print(min(my_dict))  # Output: "city" (the minimum key in the dictionary based on lexicographical order is "city" because it comes first alphabetically among the keys "name", "city", and "email") 
+print(sum(my_dict))  # This will raise a TypeError because the values in the dictionary are not all numeric and cannot be summed together. The sum() function can only be used with numeric values, and since the dictionary contains string values ("Alice", "New York", "alice@example.com"), it will raise an error when trying to calculate the sum.
+
