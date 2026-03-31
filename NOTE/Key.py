@@ -160,3 +160,5 @@ print(0.1 + 0.2) # Output: 0.30000000000000004 (due to floating-point precision 
 print(round(0.1 + 0.2, 10) == 0.3) # Output: True (using round() to handle floating-point precision issues)
 
 
+# QUESTION 21
+print(0.1 + 0.2) # Output: 0.30000000000000004 (due to floating-point precision issues in Python, the sum of 0.1 and 0.2 does not exactly equal 0.3, resulting in a value that is very close to 0.3 but not exactly equal)
