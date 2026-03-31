@@ -158,3 +158,5 @@ print(0.1 + 0.2) # Output: 0.30000000000000004 (due to floating-point precision 
 # QUESTION 20
 
 print(round(0.1 + 0.2, 10) == 0.3) # Output: True (using round() to handle floating-point precision issues)
+
+
