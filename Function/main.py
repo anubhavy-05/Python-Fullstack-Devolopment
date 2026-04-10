@@ -56,4 +56,14 @@ def f1():
         print(e**2,end=" ") # it prints all the numbers from 0 to n-1 (inclusive) using a for loop.
         print() # it prints a new line after the loop is finished.
 f1() # the function is called to execute the code inside it.
-f1()
+f1()# the function is called again to execute the code inside it once more.
+
+
+
+
+# difference between defining a function and calling a function:
+# defining a function means creating the function and specifying its name, parameters, and the code block that it will execute when called. calling a function means executing the code inside the function by using its name followed by parentheses, and optionally passing arguments to it. defining a function does not execute the code inside it, while calling a function does execute the code inside it.for example: 
+def greet(name): # this is defining a function named greet that takes a parameter name.
+    return "Hello, " + name + "!" # this is the code block that will be executed when the function is called. it returns a greeting message using the name parameter.   
+print(greet("Alice")) # this is calling the function greet with the argument "Alice". it executes the code inside the function and returns the greeting message which is then printed.
+
