@@ -17,7 +17,7 @@ print(greet("Alice")) # Output: "Hello, Alice!" (the function is called with the
 
 
 
-# difference between function and method:
+                  # difference between function and method:
 
 # A function is a block of code that performs a specific task and can be called independently. It can be defined using the def keyword and can be used in various contexts. For example, the built-in print() function is a function that can be called to display output.
 
@@ -25,9 +25,10 @@ print(greet("Alice")) # Output: "Hello, Alice!" (the function is called with the
 
 
 
-# difference between defining a function and calling a function:
+                # difference between defining a function and calling a function:
 
 # defining a function means creating the function and specifying its name, parameters, and the code block that it will execute when called. calling a function means executing the code inside the function by using its name followed by parentheses, and optionally passing arguments to it. defining a function does not execute the code inside it, while calling a function does execute the code inside it.for example: 
-def greet(name): # this is defining a function named greet that takes a parameter name.
+
+def greet(name):              # this is defining a function named greet that takes a parameter name.
     return "Hello, " + name + "!" # this is the code block that will be executed when the function is called. it returns a greeting message using the name parameter.   
-print(greet("Alice")) # this is calling the function greet with the argument "Alice". it executes the code inside the function and returns the greeting message which is then printed.
+print(greet("Alice"))     # this is calling the function greet with the argument "Alice". it executes the code inside the function and returns the greeting message which is then printed..output: "Hello, Alice!" (the function is called with the argument "Alice", and it returns the greeting message which is then printed)
