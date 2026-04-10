@@ -46,3 +46,14 @@ def fibonacci(n):
     else:
         return fibonacci(n - 1) + fibonacci(n - 2) # this is a recursive call to calculate the Fibonacci of n by summing the Fibonacci of (n-1) and (n-2)       
 print(fibonacci(10)) # Output: 55 (the function is called with the argument 10, and it calculates the Fibonacci of 10 which is the sum of the Fibonacci of 9 and 8) 
+
+# EXAMPLE 6:
+
+def f1():
+    print("enter a number") # this function simply prints a message when called.
+    n=int(input()) # it takes an input from the user and converts it to an integer.
+    for e in range(1,n+1):
+        print(e**2,end=" ") # it prints all the numbers from 0 to n-1 (inclusive) using a for loop.
+        print() # it prints a new line after the loop is finished.
+f1() # the function is called to execute the code inside it.
+f1()
