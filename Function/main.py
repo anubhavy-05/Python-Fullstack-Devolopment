@@ -63,7 +63,28 @@ f1()# the function is called again to execute the code inside it once more.
 
 # difference between defining a function and calling a function:
 # defining a function means creating the function and specifying its name, parameters, and the code block that it will execute when called. calling a function means executing the code inside the function by using its name followed by parentheses, and optionally passing arguments to it. defining a function does not execute the code inside it, while calling a function does execute the code inside it.for example: 
+
 def greet(name): # this is defining a function named greet that takes a parameter name.
     return "Hello, " + name + "!" # this is the code block that will be executed when the function is called. it returns a greeting message using the name parameter.   
-print(greet("Alice")) # this is calling the function greet with the argument "Alice". it executes the code inside the function and returns the greeting message which is then printed.
+print(greet("Alice")) # this is calling the function greet with the argument "Alice". it executes the code inside the function and returns the greeting message which is then printed.output: "Hello, Alice!" (the function is called with the argument "Alice", and it returns the greeting message which is then printed)
 
+
+
+
+
+                      # Take nothing , Return nothing
+
+                      
+
+# this type of function is used when we want to perform some action without taking any input or returning any output. it simply executes the code inside it when called. for example:
+
+
+def greet():    
+    print("Hello, World!") # this function takes no parameters and simply prints a greeting message when called. it does not return any value.  
+greet() # Output: "Hello, World!" (the function is called and it executes the code inside it, which prints the greeting message)    
+
+#Example 2:
+def print_numbers():    
+    for i in range(1, 6):
+        print(i) # this function takes no parameters and prints the numbers from 1 to 5 when called. it does not return any value.
+print_numbers() # Output: 1 2 3 4 5 (the function is called and it executes the code inside it, which prints the numbers from 1 to 5)
