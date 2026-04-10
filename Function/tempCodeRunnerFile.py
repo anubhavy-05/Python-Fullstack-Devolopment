@@ -1,8 +1,8 @@
-def f1():
-    print("enter a number") # this function simply prints a message when called.
-    n=int(input()) # it takes an input from the user and converts it to an integer.
-    for e in range(1,n+1):
-        print(e**2,end=" ") # it prints all the numbers from 0 to n-1 (inclusive) using a for loop.
-        print() # it prints a new line after the loop is finished.
-f1() # the function is called to execute the code inside it.
-f1()
+def fibonacci(n):
+    if n <= 0:
+        return 0 # the Fibonacci of 0 is defined to be 0
+    elif n == 1:
+        return 1 # the Fibonacci of 1 is defined to be 1
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2) # this is a recursive call to calculate the Fibonacci of n by summing the Fibonacci of (n-1) and (n-2)       
+print(fibonacci(10)) 
