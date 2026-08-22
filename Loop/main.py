@@ -71,6 +71,47 @@ while i<=n:
 print(sum)
 
 
+#Python me 1 se 10 print karne ke liye aap for loop ya while loop use kar sakte hain:
+
+for i in range(1, 11):
+    print(i)
+
+
+
+i = 1
+while i <= 10:
+    print(i)
+    i += 1
+
+#Print numbers from 1 to 100 that are divisible by 7:
+for i in range(1, 101):
+    if i % 7 == 0:
+        print(i, end=" ")
+
+
+for i in range(7, 101, 7):
+    print(i, end=" ")
+
+
+
+#print all odd number divisible by 3 from 1 to 101
+
+
+for i in range(1, 102):
+    if i % 2 != 0 and i % 3 == 0:
+        print(i, end=" ")
+
+
+
+
+
+
+
+
+
+
+
+
 #CREATE A VARIABLE CALLED PASSWORD AND ASSIGN A VALUE TO IT. THEN ASK THE USER TO ENTER THE PASSWORD AND CHECK IF IT IS CORRECT OR NOT USING WHILE LOOP.
 sahi_password = "python123"
 password = input("enter the password:")
