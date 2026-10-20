@@ -119,3 +119,62 @@ print(f"Hi! My name is {name} and my lucky number is {lucky_number}.")
 name = input("Enter your name: ")
 lucky_number = int(input("Enter your lucky number: "))
 print(f"Hi! My name is {name} and my lucky number is {lucky_number}.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+# wap to print twinkle twikle little star poem i  python using print statement.
+
+print('''Twinkle, twinkle, little star,
+How I wonder what you are!
+Up above the world so high,
+Like a diamond in the sky.
+
+When the blazing sun is gone,
+When he nothing shines upon,
+Then you show your little light,
+Twinkle, twinkle, all the night.
+
+Then the trav'ller in the dark,
+Thanks you for your tiny spark,
+He could not see which way to go,
+If you did not twinkle so.
+
+In the dark blue sky you keep,
+And often thro' my curtains peep,
+For you never shut your eye,
+Till the sun is in the sky.
+
+'Tis your bright and tiny spark,
+Lights the trav'ller in the dark:
+Tho' I know not what you are,
+Twinkle, twinkle, little star.''')
+
+#wap to print the table of a number using while loop. Take the number as input from the user.
+
+number = int(input("Enter a number: "))
+i = 1
+while i <= 10:
+    print(f"{number} x {i} = {number * i}")
+    i += 1
+# OR wap to print the table of a number using for loop. Take the number as input from the user.
+    
+    number = int(input("Enter a number: "))
+    for i in range(1, 11):
+        print(f"{number} x {i} = {number * i}")
+
+# WAP to print the table of a number using for loop. Take the number as input from the user.
+
+    number = int(input("Enter a number: "))
+    n = 10
+    for i in range(1, n + 1):   
+        print(f"{number} x {i} = {number * i}")       
