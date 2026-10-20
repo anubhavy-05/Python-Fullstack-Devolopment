@@ -177,4 +177,83 @@ while i <= 10:
     number = int(input("Enter a number: "))
     n = 10
     for i in range(1, n + 1):   
-        print(f"{number} x {i} = {number * i}")       
+        print(f"{number} x {i} = {number * i}")  
+
+
+# WAP to print the sum of two numbers using for loop. Take the two numbers as input from the user.
+
+
+a=int(input("Enter a number: "))
+b=int(input("Enter another number: "))
+sum=a+b
+print("sum of two number is:", sum)
+print(f"The sum of {a} and {b} is: {sum}")
+
+
+#WAP to print the remainder of two numbers . Take the two numbers as input from the user.
+
+
+a=int(input("Enter a number: "))
+b=int(input("Enter another number: "))
+remainder=a%b
+print("The remainder of the division is:", remainder)
+print(f"The remainder of {a} divided by {b} is: {remainder}")
+
+
+
+a=int(input("Enter a number: "))
+z=int(input("Enter a number: "))
+remainder=a%z
+print(f"The remainder of {a} divided by {z} is: {remainder}")
+print("The remainder divided by z  is:", remainder)
+
+
+
+
+a=int(input("Enter a number: "))
+square=a**2
+print("The square of the number is:", square)
+print(f"The square of {a} is: {square}")
+
+
+# 50,60,80,90 print max and min number from the list using max() and min() function.
+numbers = [50, 60, 80, 90]
+print("Maximum number in the list is:", max(numbers))
+print("Minimum number in the list is:", min(numbers))
+
+
+
+#WAP to store 7 fruits in a list take the input from the user and print the list of fruits.
+fruits = []
+f1 = input("Enter the name of fruit 1: ")
+fruits.append(f1)
+f2 = input("Enter the name of fruit 2: ")
+fruits.append(f2)
+f3 = input("Enter the name of fruit 3: ")
+fruits.append(f3)
+f4 = input("Enter the name of fruit 4: ")
+fruits.append(f4)
+f5 = input("Enter the name of fruit 5: ")
+fruits.append(f5)
+f6 = input("Enter the name of fruit 6: ")   
+fruits.append(f6)
+f7 = input("Enter the name of fruit 7: ")
+fruits.append(f7)
+
+print("The list of fruits is:", fruits)
+
+
+# Write a program to create a dictionary of Hindi words with values as their English translation. Provide user with an option to look it up!
+
+words = {
+    "madad": "help",
+    "pyaar": "love",
+    "dost": "friend",
+    "नमस्ते": "Hello",
+    "धन्यवाद": "Thank you",
+    "कृपया": "Please",
+    "हाँ": "Yes",
+    "नहीं": "No"
+}
+word = input("Enter a Hindi word to look up its English translation: ")
+print(words[word])
