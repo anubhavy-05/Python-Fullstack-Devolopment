@@ -100,9 +100,9 @@ for i in range(1, 21):
 
 
 
-charge = [50, 25, 25]  # Create a list of charges.
+charge = [50, 25, 25]  # Create a s of charges.
 refund = sum(charge[:2])  # Add first two charges: 50 + 25 = 75.
-charge.remove(25)  # Remove the first occurrence of 25 from the list.
+charge.remove(25)  # Remove the first occurrence of 25 from the s.
 print(sum(charge) - refund)  # Print remaining total minus refund amount.
 
 
@@ -216,31 +216,31 @@ print("The square of the number is:", square)
 print(f"The square of {a} is: {square}")
 
 
-# 50,60,80,90 print max and min number from the list using max() and min() function.
+# 50,60,80,90 print max and min number from the s using max() and min() function.
 numbers = [50, 60, 80, 90]
-print("Maximum number in the list is:", max(numbers))
-print("Minimum number in the list is:", min(numbers))
+print("Maximum number in the s is:", max(numbers))
+print("Minimum number in the s is:", min(numbers))
 
 
 
-#WAP to store 7 fruits in a list take the input from the user and print the list of fruits.
+#WAP to store 7 fruits in a s take the input from the user and print the s of fruits.
 fruits = []
 f1 = input("Enter the name of fruit 1: ")
-fruits.append(f1)
+fruits.add(f1)
 f2 = input("Enter the name of fruit 2: ")
-fruits.append(f2)
+fruits.add(f2)
 f3 = input("Enter the name of fruit 3: ")
-fruits.append(f3)
+fruits.add(f3)
 f4 = input("Enter the name of fruit 4: ")
-fruits.append(f4)
+fruits.add(f4)
 f5 = input("Enter the name of fruit 5: ")
-fruits.append(f5)
+fruits.add(f5)
 f6 = input("Enter the name of fruit 6: ")   
-fruits.append(f6)
+fruits.add(f6)
 f7 = input("Enter the name of fruit 7: ")
-fruits.append(f7)
+fruits.add(f7)
 
-print("The list of fruits is:", fruits)
+print("The s of fruits is:", fruits)
 
 
 # Write a program to create a dictionary of Hindi words with values as their English translation. Provide user with an option to look it up!
@@ -257,3 +257,69 @@ words = {
 }
 word = input("Enter a Hindi word to look up its English translation: ")
 print(words[word])
+
+
+
+#WAP to input eight numbers from the user and store them in a s. Then, print the s of numbers.(once)
+
+s=set()
+l1 = int(input("Enter number 1: "))
+s.add(l1)
+l2 = int(input("Enter number 2: "))
+s.add(l2)
+l3 = int(input("Enter number 3: "))
+s.add(l3)
+l4 = int(input("Enter number 4: "))
+s.add(l4)
+l5 = int(input("Enter number 5: "))
+s.add(l5)
+l6 = int(input("Enter number 6: "))
+s.add(l6)
+l7 = int(input("Enter number 7: "))
+s.add(l7)
+l8 = int(input("Enter number 8: "))
+s.add(l8)
+
+print("The s of numbers is:", s)
+
+
+#create an empty dictionary to allow four friends to enter their names and phone numbers. Then, print the dictionary.
+
+
+friends = {}
+f1 = input("Enter the name of friend 1: ")
+p1 = input("Enter the phone number of friend 1: ")
+friends.update({f1: p1})
+
+f2 = input("Enter the name of friend 2: ")
+p2 = input("Enter the phone number of friend 2: ")
+friends.update({f2: p2})
+
+f3 = input("Enter the name of friend 3: ")
+p3 = input("Enter the phone number of friend 3: ")
+friends.update({f3: p3})
+
+f4 = input("Enter the name of friend 4: ")
+p4 = input("Enter the phone number of friend 4: ")
+friends.update({f4: p4})
+
+print("The dictionary of friends is:", friends)
+
+
+#WAP to to print a massage byn usin if and elif ladder. Take the age as input from the user.
+
+age=int(input("Enter your age: "))
+if age<18:
+    print("You are a minor.")
+elif age>=18 and age<65:
+    print("You are an adult.")
+else:
+    print("You are a senior citizen.")
+
+    #WAP to print yes if the enter by the usre is less than or equal to 18. Take the age as input from the user.
+
+age=int(input("Enter your age: "))
+if age<=18:
+    print("Yes.")
+else:
+    print("No.")  
