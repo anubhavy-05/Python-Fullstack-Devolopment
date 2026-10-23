@@ -323,3 +323,16 @@ if age<=18:
     print("Yes.")
 else:
     print("No.")  
+
+
+
+#WAP to find out wheather a student passed or failed. if it requeires total 40% and minimum 33% in each subject to pass. Take marks as input from the user.
+
+m1 = int(input("Enter the marks of subject 1: "))
+m2 = int(input("Enter the marks of subject 2: "))
+m3 = int(input("Enter the marks of subject 3: "))   
+total_percentage= ((m1+m2+m3)/3)*100
+if total_percentage>=40 and m1>=33 and m2>=33 and m3>=33:
+    print("Congratulations! You have passed the exam.")
+else:
+    print("Sorry, you have failed the exam.")
